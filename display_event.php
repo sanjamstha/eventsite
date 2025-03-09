@@ -14,7 +14,7 @@ $stmt = $pdo->query($query);
 // Check if there are any events in the database
 if ($stmt->rowCount() > 0) {
     echo '<section class="pb-10 bg-white ">';
-    echo '<div class="w-[70%] mx-auto flex flex-wrap gap-4 justify-around">'; // Flexbox container with gap, centered
+    echo '<div class="w-[70%] mx-auto flex flex-wrap gap-12">'; // Flexbox container with gap, centered
 
     // Loop through each event and display
     while ($event = $stmt->fetch(PDO::FETCH_ASSOC)) {
